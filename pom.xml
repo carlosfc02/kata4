@@ -20,5 +20,6 @@
                 <artifactId>sqlite-jdbc</artifactId>
                 <version>3.43.2.2</version>
             </dependency>
+
         </dependencies>
 </project>
