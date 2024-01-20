@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class SqliteTrackLoader implements TrackLoader {
@@ -21,6 +22,8 @@ public class SqliteTrackLoader implements TrackLoader {
         try {
             return load(queryAll());
 
+        } catch (SQLException e) {
+            return Collections.emptyList();
         }
     }
 
